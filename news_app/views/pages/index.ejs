@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head'); %>
+  <title><%= title %></title>
+</head>
+<body class="container">
+
+<header>
+  <%- include('../partials/header'); %>
+  
+</header>
+
+<main>
+  <div class="jumbotron">
+    <div class="text-right">
+      <a href="/cms/newsform" class="btn btn-primary">Create News</a>
+    </div>
+    <h1><%= title %></h1>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Content</th>
+          <th>Author</th>
+          <th>Date</th>
+          <th>Edit</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% news.forEach((news) => { %>
+        <tr>
+          <td><%= news.title %></td>
+          <td><%= news.content %></td>
+          <td><%= news.author %></td>
+          <td><%= news.date %></td>
+          <td><a href="/cms/edit/<%= news.id %>" class="btn btn-primary">Edit</a></td>
+          <td>
+            <form action="/cms/delete/<%= news.id %>" method="POST">
+              <button type="submit" class="btn btn-danger">Delete</button>
+              <input type="hidden" name="_method" value="DELETE">
+            </form>
+          </td>
+        </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  </div>
+</main>
+
+<footer>
+  <%- include('../partials/footer'); %>
+</footer>
+
+</body>
+</html>

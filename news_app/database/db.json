@@ -1,0 +1,25 @@
+{
+  "news": [
+    {
+      "title": "News Title 4",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nulla a ultricies lacinia, velit nibh commodo nibh, id aliquam nunc tortor vitae tellus.",
+      "author": "Author 4",
+      "date": "2024-06-14",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "title": "News Title 2",
+      "content": "Sed ac nisl euismod, lacinia tellus id, mattis nulla. Sed viverra, lectus et ullamcorper tincidunt, nibh enim lacinia nunc, quis tincidunt nulla neque sed nisl.",
+      "author": "Author 2",
+      "date": "2023-02-01"
+    },
+    {
+      "title": "News Title 5",
+      "content": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed euismod, arcu sed auctor rhoncus, tellus nulla bibendum quam, eget lacinia nibh nunc sit amet tortor.",
+      "author": "Author 5",
+      "date": "2024-06-14",
+      "id": 3
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-serB5k7Yzx5qBQVknI31uD7z3739qs5jjC/K1mTdB5V5NHhj7jNqPt3jT1a+vv7YlZ18Bq+9PfQ==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center mt-2">
+            <div class="col-md-6">
+                <h1 class="chat-title text-center">Chat App</h1>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-3">
+            <div class="col-md-6">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" for="inputGroupSelect01">Rooms</label>
+                    </div>
+                    <select class="custom-select" id="room-select">
+                        <option selected value="General">General</option>
+                        <option value="Room1">Room1</option>
+                        <option value="Room2">Room2</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body chat-container">
+                        <div id="chat-messages" class="chat-messages"></div>
+                    </div>
+                    <div class="card-footer">
+                        <form class="chat-form" id="message-form">
+                            <div class="input-group">
+                                <input type="text" id="message-input" class="form-control chat-input" placeholder="Type your message here">
+                                <div class="input-group-append">
+                                    <button type="submit" class="btn btn-primary" >
+                                        <span class="fa fa-paper-plane"></span>
+                                        <span class="fa fa-map-marker-alt"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                        
+                    </div>
+                    <button type="submit" id="send-location" class="btn btn-secondary" style="height: 44px;margin-left: 2px;">
+                        Send Location
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="chat.js"></script>
+</body>
+</html>

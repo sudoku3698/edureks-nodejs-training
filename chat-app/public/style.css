@@ -1,0 +1,61 @@
+body{
+    background-color: #f8f8f8;
+}
+
+.chat-title{
+    color: #333;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.chat-container{
+    height: 450px;
+    overflow-y: scroll;
+}
+
+.chat-messages{
+    padding: 10px;
+}
+
+.chat-input{
+    border: none;
+    padding: 10px;
+    width: 100%;
+}
+
+.chat-btn{
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.chat-btn:hover{
+    background-color: #555;
+}
+
+.card-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.send-location-btn{
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.send-location-btn:hover{
+    background-color: #555;
+}
+
+.card-footer form{
+    width: 100%;
+}
+

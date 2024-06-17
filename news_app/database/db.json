@@ -18,8 +18,22 @@
       "title": "News Title 5",
       "content": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed euismod, arcu sed auctor rhoncus, tellus nulla bibendum quam, eget lacinia nibh nunc sit amet tortor.",
       "author": "Author 5",
-      "date": "2024-06-14",
+      "date": "2024-06-17",
       "id": 3
+    },
+    {
+      "title": "This is My First News Post",
+      "content": "This is My First News Post This is My First News Post This is My First News Post This is My First News Post This is My First News Post This is My First News Post This is My First News Post This is My First News Post This is My First News Post This is My First News PostThis is My First News Post ",
+      "author": "Sudesh Jadhav",
+      "date": "2024-06-13",
+      "id": 1718606779434
+    },
+    {
+      "title": "This is My Second news Post",
+      "content": "This is My Second news Post This is My Second news Post This is My Second news Post This is My Second news Post This is My Second news Post This is My Second news Post This is My Second news Post This is My Second news Post This is My Second news Post This is My Second news Post This is My Second news Post This is My Second news Post",
+      "author": "Sudesh J",
+      "date": "2024-06-17",
+      "id": 1718606810804
     }
   ]
 }

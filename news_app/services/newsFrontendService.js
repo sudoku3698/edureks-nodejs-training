@@ -1,19 +1,19 @@
 const axios = require('axios')
 const newsService = require('./newsService')
 const index = async (req, res,next)=> {
-    const response = await axios.get('http://localhost:4000/news')
+    const response = await axios.get('http://localhost:6000/news')
     const news = response.data
     console.log(news)
-    res.render('pages/index',{title:"News Head Lines", news});
+    res.render('pages/index',{title:"News Head Lines", news,user:req.session.user});
 }
 
 const about = (req, res,next)=> {
-    res.render('pages/about',{title:"About Us"});
+    res.render('pages/about',{title:"About Us",user:req.session.user});
 }
 
 
 const addNewsForm = (req, res) => {
-    res.render('pages/add', {title: "Add News"});
+    res.render('pages/add', {title: "Add News",user:req.session.user});
 }
 
 
@@ -26,7 +26,7 @@ const addNews = async (req, res) => {
     // const day = String(currentDate.getDate()).padStart(2, '0');
     // news['date'] = `${year}-${month}-${day}`;
     try {
-        const response = await axios.post('http://localhost:4000/news', news);
+        const response = await axios.post('http://localhost:6000/news', news);
         res.redirect('/cms');
     } catch (error) {
         res.status(500).json({ message: 'Internal server error' });
@@ -35,9 +35,9 @@ const addNews = async (req, res) => {
 const editNews = async (req, res) => {
     const id = req.params.id
     try {
-        const response = await axios.get(`http://localhost:4000/news/${id}`)
+        const response = await axios.get(`http://localhost:6000/news/${id}`)
         const news = response.data
-        res.render('pages/edit',{title:"Edit News", news})
+        res.render('pages/edit',{title:"Edit News", news,user:req.session.user})
     } catch (error) {
         if (error.response && error.response.status === 404) {
             res.status(404).json({ message: 'News not found' })
@@ -55,7 +55,7 @@ const updateNews = async (req, res) => {
     const month = String(currentDate.getMonth() + 1).padStart(2, '0')
     const day = String(currentDate.getDate()).padStart(2, '0')
     news['date'] = `${year}-${month}-${day}`;
-    axios.put(`http://localhost:4000/news/${id}`, news)
+    axios.put(`http://localhost:6000/news/${id}`, news)
         .then(response => {
             res.redirect('/cms')
         })
@@ -66,7 +66,7 @@ const updateNews = async (req, res) => {
 
 const deleteNews = async (req, res) => {
     const id = req.params.id
-    axios.delete(`http://localhost:4000/news/${id}`)
+    axios.delete(`http://localhost:6000/news/${id}`)
         .then(() => {
             res.redirect('/cms')
         })

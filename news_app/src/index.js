@@ -4,7 +4,10 @@ const app=express()
 app.use(session({
     secret: 'ABCDEFG123456',
     resave: false,
-    saveUninitialized: true
+    saveUninitialized: true,
+    cookie: {
+        maxAge: 1000 * 60 * 60 * 24 * 7 // 1 week
+    }
   }));
 const bodyParser = require('body-parser')
 const cors = require('cors')

@@ -1,39 +1,44 @@
 {
   "news": [
     {
-      "title": "News Title 4",
-      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nulla a ultricies lacinia, velit nibh commodo nibh, id aliquam nunc tortor vitae tellus.",
-      "author": "Author 4",
-      "date": "2024-06-14",
-      "id": 1
+      "id": 1,
+      "title": "Breaking news: alien invasion confirmed",
+      "image": "https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg",
+      "content": "Aliens have been spotted landing on Earth and are currently invading our planet.",
+      "author": "John Smith",
+      "date": "05-05-2023"
     },
     {
       "id": 2,
-      "title": "News Title 2",
-      "content": "Sed ac nisl euismod, lacinia tellus id, mattis nulla. Sed viverra, lectus et ullamcorper tincidunt, nibh enim lacinia nunc, quis tincidunt nulla neque sed nisl.",
-      "author": "Author 2",
-      "date": "2023-02-01"
+      "title": "SpaceX launches first manned mission to Mars",
+      "image": "https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg",
+      "content": "Elon Musk's SpaceX successfully launched a manned mission to Mars, marking a historic milestone in human space exploration.",
+      "author": "Jane Doe",
+      "date": "06-05-2023"
     },
     {
-      "title": "News Title 5",
-      "content": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed euismod, arcu sed auctor rhoncus, tellus nulla bibendum quam, eget lacinia nibh nunc sit amet tortor.",
-      "author": "Author 5",
-      "date": "2024-06-17",
-      "id": 3
+      "id": 3,
+      "title": "New iPhone 14 releases with advanced features",
+      "image": "https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg",
+      "content": "Apple has announced the latest version of its iPhone, which features advanced camera technology and wireless charging capabilities.",
+      "author": "Mike Brown",
+      "date": "07-05-2023"
     },
     {
-      "title": "This is My First News Post",
-      "content": "This is My First News Post This is My First News Post This is My First News Post This is My First News Post This is My First News Post This is My First News Post This is My First News Post This is My First News Post This is My First News Post This is My First News PostThis is My First News Post ",
-      "author": "Sudesh Jadhav",
-      "date": "2024-06-13",
-      "id": 1718606779434
+      "id": 4,
+      "title": "Bitcoin price surges to new highs",
+      "image": "https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg",
+      "content": "The price of Bitcoin has reached an all-time high, causing investors to rejoice.",
+      "author": "Sarah Johnson",
+      "date": "08-05-2023"
     },
     {
-      "title": "This is My Second news Post",
-      "content": "This is My Second news Post This is My Second news Post This is My Second news Post This is My Second news Post This is My Second news Post This is My Second news Post This is My Second news Post This is My Second news Post This is My Second news Post This is My Second news Post This is My Second news Post This is My Second news Post",
-      "author": "Sudesh J",
-      "date": "2024-06-17",
-      "id": 1718606810804
+      "id": 5,
+      "title": "New Covid vaccine approved by regulators",
+      "image": "https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg",
+      "content": "The FDA has approved a new Covid vaccine, providing hope for a vaccine-based solution to the pandemic.",
+      "author": "Bob Smith",
+      "date": "09-05-2023"
     }
   ]
 }

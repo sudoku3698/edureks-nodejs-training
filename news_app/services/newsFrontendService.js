@@ -47,6 +47,7 @@ const editNews = async (req, res) => {
     }
 }
 
+
 const updateNews = async (req, res) => {
     const id = req.params.id
     const news = req.body
